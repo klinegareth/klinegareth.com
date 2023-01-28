@@ -59,7 +59,6 @@ jobs:
         cd ..
         # Push build into the deployment branch
         echo "Pushing build $GIT_COMMIT to $DEPLOY_BRANCH"
-        mv .git dist/.git
         cd dist
         git add -A
         git commit -m "Automated build $GIT_COMMIT"

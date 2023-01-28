@@ -3,9 +3,6 @@
 
 name: Build
 
-permissions:
-  contents: read, write
-
 env:
   DEPLOY_BRANCH_POSTFIX: deploy # Configure the destination branch postfix (code on "main" branch will be built and pushed into "main-POSTFIX" branch)
 

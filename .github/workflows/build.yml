@@ -32,12 +32,6 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run build
-    
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v3
-    # Synchronize & push BUILD directory to deployment branch
     - name: Configure Git informations
       run: |
         git config --global user.name $GITHUB_ACTOR

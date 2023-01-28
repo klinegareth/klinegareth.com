@@ -1,0 +1,18 @@
+{
+  "description": "the other places i am online",
+  "links": [
+    {
+      "name": "insta",
+      "url": "https://www.instagram.com/klinegareth/",
+      "icon": ""
+    },
+    {
+      "name": "cohost",
+      "url": "https://cohost.org/kline"
+    },
+    {
+      "name": "mail",
+      "url": "mailto:august@klinegareth.com"
+    }
+  ]
+}

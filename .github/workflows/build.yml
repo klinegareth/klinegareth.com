@@ -16,8 +16,7 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    
-    permissions: read-all, write-all
+  
 
     strategy:
       matrix:
@@ -31,9 +30,15 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-        token: ${{ secrets.GH_TOKEN }}
     - run: npm ci
     - run: npm run build
+    
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      with:
+          token: ${{ secrets.GH_TOKEN }}
     # Synchronize & push BUILD directory to deployment branch
     - name: Configure Git informations
       run: |

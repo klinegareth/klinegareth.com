@@ -37,8 +37,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-      with:
-          token: ${{ secrets.GH_TOKEN }}
     # Synchronize & push BUILD directory to deployment branch
     - name: Configure Git informations
       run: |

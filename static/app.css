@@ -1,0 +1,103 @@
+:root {
+	--color-text: #684630;
+	--color-box-bg: rgb(235, 225, 221);
+	--color-highlight: #a47473;
+	--color-bg: var(--color-highlight);
+}
+
+@font-face {
+	font-family: Cozette;
+	src: url('/fonts/CozetteVector.ttf');
+}
+
+* {
+	font-family: Cozette;
+	color: var(--color-text);
+}
+
+a {
+	font-style: italic;
+	color: var(--color-highlight);
+	text-decoration: none;
+}
+
+body {
+	background-color: var(--color-bg);
+}
+
+.all {
+	padding: 50px;
+	width: 40%;
+	height: 60%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	display: flex;
+    flex-direction: row;
+	justify-content: center;
+	gap: 20px;
+}
+
+@media screen and (max-width: 800px) {
+	.all {
+		min-width: 60%;
+        min-height: 60%;
+        flex-direction: column;
+        overflow: scroll;
+        align-self: flex-start;
+	}
+
+    .left {
+        min-height: 50%;
+        overflow: visible;
+    }
+
+    .topleft {
+        min-height: 50%;
+    }
+
+    .bottomleft {
+        display: flex;
+        min-height: 50%;
+    }
+
+    .right {
+        overflow: visible;
+    }
+
+
+}
+
+.left {
+	flex: 0 1 50%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.right {
+	flex: 1 1 50%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.topleft {
+	display: flex;
+	flex: 65% 0 1;
+}
+.topright {
+	flex: 25% 0 1;
+	display: flex;
+}
+.bottomleft {
+	display: flex;
+	flex: 1;
+}
+.bottomright {
+	flex: 1;
+	display: flex;
+}

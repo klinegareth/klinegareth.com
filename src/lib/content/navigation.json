@@ -1,0 +1,17 @@
+{
+  "description": "test",
+  "links": [
+    {
+      "name": "home",
+      "url": "/"
+    },
+    {
+      "name": "links",
+      "url": "/links"
+    },
+    {
+      "name": "networked media",
+      "url": "/networked-media"
+    }
+  ]
+}

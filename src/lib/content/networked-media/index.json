@@ -1,0 +1,16 @@
+{
+	"title": "networked media",
+	"description": "stuff 4 class",
+	"links": [
+		{
+			"name": "today x",
+			"url": "https://klinegareth.com/clock",
+			"description": "clock!"
+		},
+		{
+			"name": "vernacular web",
+			"url": "networked-media/vernacularweb",
+			"description": "discussion post!"
+		}
+	]
+}

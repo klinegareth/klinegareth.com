@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-	<title>(august) kline gareth</title>
+	<title>links | (august) kline gareth</title>
 	<link rel="icon" href="favicon.ico" />
 </svelte:head>
 
@@ -20,7 +20,7 @@
 		</div>
 	</div>
 	<div class="right">
-			<LinkBox {links} />
+			<LinkBox {links} newtab={true}/>
 	</div>
 </div>
 

@@ -1,23 +1,21 @@
 <script lang="ts">
 	export let image: string;
 	export let link: string = null; // this is very silly, there's gotta be a better way to make props optional when you don't want to set a default value
-    import sunsetKline from "$lib/assets/images/sunsetkline.png"
-//	const urls = import.meta.glob('/static/assets/images/*.{png,svg}');
-//    console.log(urls)
-//	let imageUrl: string;
-//	for (let url in urls) {
-//		let splitString = url.split('/');
-//		let end = splitString[splitString.length - 1];
-//        console.log(urls);
-//		if (end === image) {
-//			imageUrl = url;
-//            console.log(end)
-//		}
-//	}
+	const urls = import.meta.glob('/static/images/*.{png,svg,gif}');
+	let imageUrl: string;
+	for (let url in urls) {
+		let splitString = url.split('/');
+		let end = splitString[splitString.length - 1];
+		console.log(end);
+		if (end === image) {
+			imageUrl = url.substring(url.indexOf('/', 1));
+			console.log(imageUrl);
+		}
+	}
 </script>
 
 <div id="container">
-	<a href={link} target="_blank" rel="noreferrer"> <img src={sunsetKline} alt="Alt" /> </a>
+	<a href={link} target="_blank" rel="noreferrer"> <img src={imageUrl} alt="Alt" /> </a>
 </div>
 
 <style>

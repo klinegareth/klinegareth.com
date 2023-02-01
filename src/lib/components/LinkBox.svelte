@@ -8,6 +8,7 @@
 		description: string;
 		links: ArrayLike<Link>;
 	};
+	export let newtab = false;
 	let perPage = 6;
 	let page = 0;
 	export let title = 'links';
@@ -21,7 +22,6 @@
 			range(perPage)
 				.map((noInPage) => items[pageNo * perPage + noInPage])
 				.filter((link) => link != undefined);
-		console.log(range(pageCount).map((pageNo) => getPage(pageNo)));
 		return range(pageCount).map((pageNo) => getPage(pageNo));
 	}
 	function nextPage() {
@@ -55,14 +55,14 @@
 			</button>
 		{/if}
 	</div>
-	{#each pages()[page] as link}
-		<div>
-			<a href={link.url} target="_blank" rel="noreferrer">
+	<nav>
+		{#each pages()[page] as link}
+			<a href={link.url} target={newtab ? '_blank' : ''} rel="noreferrer">
 				{link.name}
 			</a>
 			<p class="link-description">{link.description}</p>
-		</div>
-	{/each}
+		{/each}
+	</nav>
 </div>
 
 <style scoped>
@@ -113,13 +113,9 @@
 		margin-bottom: 15px;
 	}
 
-	#content {
-		color: var(--color-text);
-		text-align: justify;
-	}
 	nav {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		overflow-y: scroll;
 	}
 </style>

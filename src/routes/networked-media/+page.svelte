@@ -6,21 +6,21 @@
 </script>
 
 <svelte:head>
-	<title>(august) kline gareth</title>
+	<title>networked media | (august) kline gareth</title>
+	(Mobile layout works!)
 	<link rel="icon" href="favicon.ico" />
 </svelte:head>
 
 <div class="all">
 	<div class="left">
 		<div class="topleft">
-			<ImageBox image="angels.png" link="https://graylure.tumblr.com/post/700287252594573312"/>
+			<ImageBox image="moon.gif" link="https://aconfuseddragon.itch.io/downloads" />
 		</div>
 		<div class="bottomleft">
 			<NavBox />
 		</div>
 	</div>
 	<div class="right">
-			<LinkBox {links} title="networked media"/>
+		<LinkBox {links} title="networked media" />
 	</div>
 </div>
-

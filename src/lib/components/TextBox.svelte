@@ -18,7 +18,7 @@
 		background-color: var(--color-box-bg);
 		border: solid 1px var(--color-text);
 		padding: 15px;
-		overflow: scroll;
+		overflow: hidden;
 	}
 
 	h1 {
@@ -32,5 +32,6 @@
 	#content {
 		color: var(--color-text);
 		text-align: justify;
+        overflow-y: scroll;
 	}
 </style>

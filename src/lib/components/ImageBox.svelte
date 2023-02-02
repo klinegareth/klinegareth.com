@@ -6,10 +6,8 @@
 	for (let url in urls) {
 		let splitString = url.split('/');
 		let end = splitString[splitString.length - 1];
-		console.log(end);
 		if (end === image) {
 			imageUrl = url.substring(url.indexOf('/', 1));
-			console.log(imageUrl);
 		}
 	}
 </script>

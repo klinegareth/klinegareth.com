@@ -3,15 +3,13 @@
 	import ImageBox from '$lib/components/ImageBox.svelte';
 	import NavBox from '$lib/components/NavBox.svelte';
     
-    import type {PageData} from "./$types"
-    export let data: PageData;
-    
     import post from "$lib/content/networked-media/vernacularweb.json"
+
     
 </script>
 
 <svelte:head>
-	<title>{data.page.slug} | networked media </title>
+	<title>vernacular web | networked media </title>
 	<link rel="icon" href="/favicon.ico" />
 </svelte:head>
 
@@ -25,7 +23,7 @@
 		</div>
 	</div>
 	<div class="right">
-			<TextBox content={post.content} title={post.title}/>
+			<TextBox title={post.title}>{@html post.content}</TextBox>
 	</div>
 </div>
 

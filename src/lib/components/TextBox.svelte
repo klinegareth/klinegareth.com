@@ -1,13 +1,14 @@
 <script lang="ts">
 	export let title: string;
-	export let content: string;
 </script>
 
 <div id="container">
 	<h1>{title}</h1>
-	<div id="content">
-		{content}
-	</div>
+    <div id="content">
+        <slot>
+            lorem ipsum etc and such and such lol
+        </slot>
+    </div>
 </div>
 
 <style>

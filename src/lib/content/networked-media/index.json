@@ -8,6 +8,11 @@
 			"description": "clock!"
 		},
 		{
+			"name": "narrative!",
+			"url": "networked-media/narrative",
+			"description": "~hypertext~"
+		},
+		{
 			"name": "vernacular web",
 			"url": "networked-media/vernacularweb",
 			"description": "discussion post!"

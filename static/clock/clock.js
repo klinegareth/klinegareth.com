@@ -1,7 +1,7 @@
 var today;
 let resource;
 function preload() {
-    resource = loadFont("resource.ttf");
+    resource = loadFont("./clock/resource.ttf");
 }
 
 function setup() {

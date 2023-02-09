@@ -1,7 +1,9 @@
 :root {
 	--color-text: #684630;
+	--color-link-text: #a47473;
 	--color-box-bg: rgb(235, 225, 221);
 	--color-highlight: #a47473;
+	--color-link-highlight: #ffd1bf;
 	--color-bg: var(--color-highlight);
 }
 
@@ -17,12 +19,22 @@
 
 a {
 	font-style: italic;
-	color: var(--color-highlight);
+	color: var(--color-link-text);
+	text-decoration: none;
+}
+
+a:hover {
+	font-style: normal;
 	text-decoration: none;
 }
 
 body {
 	background-color: var(--color-bg);
+    overflow: hidden;
+    /* Start https://www.cursors-4u.com */ cursor: url(https://cur.cursors-4u.net/others/oth-4/oth305.cur), auto !important; /* End https://www.cursors-4u.com */
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
 }
 
 .all {

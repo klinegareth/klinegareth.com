@@ -16,6 +16,11 @@
 			"name": "vernacular web",
 			"url": "networked-media/vernacularweb",
 			"description": "discussion post!"
+		},
+		{
+			"name": "digital literacy",
+			"url": "networked-media/literacy",
+			"description": "discussion post!"
 		}
 	]
 }

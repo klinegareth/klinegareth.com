@@ -24,7 +24,7 @@
 			<SocialsBox />
 		</div>
 		<div class="bottomright">
-			<TextBox title="hello">heyo, welcome to my page! i post things here sometimes</TextBox>
+			<TextBox title="hello">ʕ·ᴥ·ʔ- heyo, welcome to my page! i post things here sometimes</TextBox>
 		</div>
 	</div>
 </div>

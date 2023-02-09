@@ -1,7 +1,7 @@
 <script lang="ts">
 	export let image: string;
 	export let link: string = null; // this is very silly, there's gotta be a better way to make props optional when you don't want to set a default value
-	const urls = import.meta.glob('/static/images/*.{png,svg,gif}');
+	const urls = import.meta.glob('/static/images/*.{webp,gifv,png,svg,gif}');
 	let imageUrl: string;
 	for (let url in urls) {
 		let splitString = url.split('/');

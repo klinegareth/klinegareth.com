@@ -82,16 +82,8 @@ body {
 	}
 
 	.left {
+        width: 100%;
 		flex-direction: column;
-		align-items: center;
-	}
-
-	.topleft {
-		width: 100%;
-	}
-
-	.bottomleft {
-		min-width: 100%;
 	}
 
 	.right {
@@ -101,10 +93,10 @@ body {
 	}
 
 	.topright {
-		flex: 0 1;
+		flex: 2 1;
 	}
 	.bottomright {
-		flex: 0 0 !important;
+		flex: 1 1;
 	}
 }
 

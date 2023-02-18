@@ -91,6 +91,7 @@ export default function emojiCursor() {
     this.initialStyles = {
       position: "absolute",
       display: "block",
+      background: "transparent",
       pointerEvents: "none",
       "z-index": "10000000",
       fontSize: "16px",

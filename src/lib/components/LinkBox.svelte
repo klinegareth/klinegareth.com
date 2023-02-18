@@ -41,7 +41,9 @@
 <div id="container">
 	<h1>{title}</h1>
 	<div class="header-description">
+    <p>
 		{links.description}
+    </p>
 	</div>
 	<div id="page-navigation">
 		{#if page > 0}
@@ -88,11 +90,6 @@
 		text-align: center;
 	}
 
-	.link-title {
-		margin-bottom: 0px;
-		margin-top: 0px;
-	}
-
 	.link-description {
 		margin-top: 0px;
 	}
@@ -116,6 +113,6 @@
 	nav {
 		display: flex;
 		flex-direction: column;
-		overflow-y: scroll;
+		overflow-y: auto;
 	}
 </style>

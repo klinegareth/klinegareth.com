@@ -6,7 +6,7 @@
 <div id="container">
 	<h1>{title}</h1>
 	<div class="header-description">
-		{Socials.description}
+        <p>{Socials.description}</p>	
 	</div>
 	<div class="link-section">
 		{#each Socials.links as social}

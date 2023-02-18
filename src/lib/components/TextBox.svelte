@@ -5,9 +5,11 @@
 <div id="container">
 	<h1>{title}</h1>
     <div id="content">
+    <p>
         <slot>
             lorem ipsum etc and such and such lol
         </slot>
+    </p>
     </div>
 </div>
 
@@ -33,6 +35,6 @@
 	#content {
 		color: var(--color-text);
 		text-align: justify;
-        overflow-y: scroll;
+        overflow-y: auto;
 	}
 </style>

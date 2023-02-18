@@ -12,20 +12,31 @@
 	src: url('/fonts/CozetteVector.ttf');
 }
 
+img::selection, a::selection, h1::selection, p::selection {
+    background: var(--color-link-highlight);
+}
+
 * {
 	font-family: Cozette;
 	color: var(--color-text);
+    /* Start https://www.cursors-4u.com */ cursor: url(https://cur.cursors-4u.net/others/oth-4/oth305.cur), auto !important; /* End https://www.cursors-4u.com */
 }
 
-a {
+a, a > * {
 	font-style: italic;
 	color: var(--color-link-text);
 	text-decoration: none;
+    /* Start https://www.cursors-4u.com */ cursor: url(https://cur.cursors-4u.net/others/oth-4/oth306.cur), auto !important; /* End https://www.cursors-4u.com */
 }
 
-a:hover {
+a:hover, a:hover > * {
 	font-style: normal;
 	text-decoration: none;
+    /* Start https://www.cursors-4u.com */ cursor: url(https://cur.cursors-4u.net/others/oth-4/oth306.cur), auto !important; /* End https://www.cursors-4u.com */
+}
+
+button {
+    /* Start https://www.cursors-4u.com */ cursor: url(https://cur.cursors-4u.net/others/oth-4/oth306.cur), auto !important; /* End https://www.cursors-4u.com */
 }
 
 body {
@@ -86,6 +97,7 @@ body {
 	.right {
 		flex-direction: column;
 		width: 100%;
+        overflow: auto;
 	}
 
 	.topright {
@@ -108,7 +120,10 @@ body {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
-	overflow-y: scroll;
+}
+
+*::-webkit-scrollbar {
+    background-color: var(--color-box-bg);
 }
 
 .topleft {
@@ -126,4 +141,5 @@ body {
 .bottomright {
 	flex: 1 1;
 	display: flex;
+    overflow-y: auto;
 }

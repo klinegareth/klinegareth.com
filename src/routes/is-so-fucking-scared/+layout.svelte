@@ -1,0 +1,151 @@
+<slot />
+
+<style>
+	body {
+		background-color: black;
+		margin: 0;
+	}
+	@font-face {
+		font-family: 'PassingNotes';
+		src: url('/fonts/Passingnotes-agW5.ttf');
+	}
+	@font-face {
+		font-family: 'Cozette';
+		src: url('/fonts/CozetteVector.ttf');
+	}
+	.paragraph-container {
+		width: 50vw;
+		margin-left: 25vw;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: stretch;
+	}
+	a {
+		font-style: italic;
+		color: white;
+	}
+	iframe {
+		animation: borderColorLoop 2s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		animation-timing-function: linear;
+		background-color: white;
+		opacity: 60%;
+	}
+	@keyframes borderColorLoop {
+		0% {
+			border: 2px solid #ee6055;
+		}
+		25% {
+			border: 2px solid #60d394;
+		}
+		50% {
+			border: 2px solid #aaf683;
+		}
+		75% {
+			border: 2px solid #ffd97d;
+		}
+		100% {
+			border: 2px solid #ff9b85;
+		}
+	}
+	#rons {
+		min-width: 30vw;
+		height: auto;
+		margin-left: -40vw;
+	}
+	#jk {
+		min-width: 25vw;
+		height: 45vh;
+		margin-left: -45vw;
+		z-index: -1;
+	}
+	#americanconservativeframe {
+		min-width: 30vw;
+		height: 50vh;
+		z-index: -1;
+	}
+	#howto {
+		min-width: 25vw;
+		max-width: 40vw;
+		height: 50vh;
+		margin-left: 10vw;
+	}
+	p {
+		font-size: 1.8em;
+		font-weight: 800;
+		align-self: center;
+		animation: shadowColorLoop;
+		animation-iteration-count: infinite;
+		animation-duration: 5s;
+		text-shadow: 0px -10px 10px pink, 0px 10px 10px cyan;
+		color: white;
+		width: 100%;
+		font-family: 'PassingNotes', serif;
+		z-index: 2;
+	}
+	@keyframes shadowColorLoop {
+		0% {
+			text-shadow: 0px -10px 10px pink, 0px 10px 20px cyan;
+		}
+		25% {
+			text-shadow: 0px -10px 15px pink, 0px 10px 15px cyan;
+		}
+		50% {
+			text-shadow: 0px -10px 20px pink, 0px 10px 10px cyan;
+		}
+		75% {
+			text-shadow: 0px -10px 15px pink, 0px 10px 15px cyan;
+		}
+		100% {
+			text-shadow: 0px -10px 10px pink, 0px 10px 20px cyan;
+		}
+	}
+
+	img {
+		width: 300px;
+		height: 100px;
+	}
+
+	h1 {
+		margin-bottom: 0;
+		color: white;
+		font-family: 'PassingNotes';
+		font-size: 3em;
+		text-align: center;
+	}
+	.heading-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		margin-top: 10vh;
+	}
+	.graphics-anchor {
+		position: relative;
+		width: 0px;
+		height: 0px;
+	}
+	.graphics-container {
+		position: absolute;
+		top: -20vh;
+		opacity: 80%;
+	}
+	#beach-gif {
+		min-width: 40vw;
+		height: auto;
+		opacity: 100% !important;
+		filter: brightness(125%);
+	}
+	#tucks {
+		position: absolute;
+		min-width: 25vw;
+		height: auto;
+		margin-left: -40vw;
+	}
+	#ro {
+		margin-left: -30vw;
+		margin-top: -10vh;
+	}
+</style>
